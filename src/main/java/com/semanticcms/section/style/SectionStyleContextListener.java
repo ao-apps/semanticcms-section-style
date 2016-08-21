@@ -23,6 +23,7 @@
 package com.semanticcms.section.style;
 
 import com.semanticcms.core.servlet.SemanticCMS;
+import com.semanticcms.section.model.Section;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
@@ -35,6 +36,8 @@ public class SectionStyleContextListener implements ServletContextListener {
 		SemanticCMS semanticCMS = SemanticCMS.getInstance(event.getServletContext());
 		// Add our CSS file
 		semanticCMS.addCssLink("/semanticcms-section-style/styles.css");
+		// Add list item CSS class
+		semanticCMS.addListItemCssClass(Section.class, "semanticcms-section-list-item");
 	}
 
 	@Override
