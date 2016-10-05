@@ -81,11 +81,6 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
-			<artifactId>semanticcms-core-model</artifactId>
-			<version>1.7.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-servlet</artifactId>
 			<version>1.8.0</version>
 		</dependency>
@@ -94,6 +89,7 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 			<artifactId>semanticcms-section-model</artifactId>
 			<version>1.4.0</version>
 		</dependency>
+		<!-- This provides the styles for toc.inc.jspx -->
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-section-servlet</artifactId>
