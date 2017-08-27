@@ -1,6 +1,6 @@
 /*
  * semanticcms-section-style - Default style for sections nested within SemanticCMS pages and elements.
- * Copyright (C) 2016  AO Industries, Inc.
+ * Copyright (C) 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,22 +22,22 @@
  */
 package com.semanticcms.section.style;
 
-import com.semanticcms.core.servlet.SemanticCMS;
+import com.semanticcms.core.renderer.html.HtmlRenderer;
 import com.semanticcms.section.model.Section;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the styles for sections in SemanticCMS.")
+@WebListener("Registers the styles for sections in HtmlRenderer.")
 public class SectionStyleContextListener implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(event.getServletContext());
+		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(event.getServletContext());
 		// Add our CSS file
-		semanticCMS.addCssLink("/semanticcms-section-style/styles.css");
+		htmlRenderer.addCssLink("/semanticcms-section-style/styles.css");
 		// Add list item CSS class
-		semanticCMS.addListItemCssClass(Section.class, "semanticcms-section-list-item");
+		htmlRenderer.addListItemCssClass(Section.class, "semanticcms-section-list-item");
 	}
 
 	@Override
