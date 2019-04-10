@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms-section-style - Default style for sections nested within SemanticCMS pages and elements.
-Copyright (C) 2016, 2017  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -42,7 +42,7 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 		<documented.artifactId>semanticcms-section-style</documented.artifactId>
 		<documented.javaVersion>1.6</documented.javaVersion>
 		<documented.javac.link.javaApi>${javac.link.javaApi.jdk16}</documented.javac.link.javaApi>
-		<documented.name>SemanticCMS Section Style</documented.name>
+		<documented.name>SemanticCMS 1 Section Style</documented.name>
 		<documented.shortTitle>Style</documented.shortTitle>
 		<documented.url>https://semanticcms.com/section/style/</documented.url>
 		<documented.description>Default style for sections nested within SemanticCMS pages and elements.</documented.description>
