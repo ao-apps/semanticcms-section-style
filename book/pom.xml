@@ -37,7 +37,7 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 		<documented.groupId>com.semanticcms</documented.groupId><documented.artifactId>semanticcms-section-style</documented.artifactId>
 		<documented.javaVersion>1.7</documented.javaVersion>
 		<documented.javac.link.javaApi>${javac.link.javaApi.jdk7}</documented.javac.link.javaApi>
-		<documented.name>SemanticCMS 1 Section Style</documented.name>
+		<documented.name>SemanticCMS Section Style</documented.name>
 		<documented.shortTitle>Style</documented.shortTitle>
 		<documented.url>https://semanticcms.com/section/style/</documented.url>
 		<documented.description>Default style for sections nested within SemanticCMS pages and elements.</documented.description>

@@ -40,7 +40,7 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 		<description.html><![CDATA[Default style for sections nested within <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> pages and elements.]]></description.html>
 	</properties>
 
-	<name>SemanticCMS 1 Section Style</name>
+	<name>SemanticCMS Section Style</name>
 	<url>https://semanticcms.com/section/style/</url>
 	<description>Default style for sections nested within SemanticCMS pages and elements.</description>
 	<inceptionYear>2013</inceptionYear>
