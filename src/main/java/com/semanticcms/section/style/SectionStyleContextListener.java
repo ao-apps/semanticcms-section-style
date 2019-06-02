@@ -1,6 +1,6 @@
 /*
  * semanticcms-section-style - Default style for sections nested within SemanticCMS pages and elements.
- * Copyright (C) 2016, 2017  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -23,7 +23,7 @@
 package com.semanticcms.section.style;
 
 import com.semanticcms.core.renderer.html.HtmlRenderer;
-import com.semanticcms.section.model.Section;
+import com.semanticcms.section.model.SectioningContent;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
@@ -37,7 +37,7 @@ public class SectionStyleContextListener implements ServletContextListener {
 		// Add our CSS file
 		htmlRenderer.addCssLink("/semanticcms-section-style/styles.css");
 		// Add list item CSS class
-		htmlRenderer.addListItemCssClass(Section.class, "semanticcms-section-list-item");
+		htmlRenderer.addListItemCssClass(SectioningContent.class, "semanticcms-section-list-item");
 	}
 
 	@Override
