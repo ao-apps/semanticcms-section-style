@@ -37,7 +37,7 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-31T02:24:12-0500"
-		dateModified="2019-06-01T22:53:18-0500"
+		dateModified="2019-06-04T19:29:11-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-section-style:pom.version}" />
@@ -59,6 +59,12 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 						Implemented additional <ao:a href="https://www.w3.org/TR/html5/dom.html#sectioning-content">HTML 5.2 Sectioning content</ao:a>,
 						with each still acting as a section for things like page outlines and table of contents, but which use more appropriate
 						HTML 5 semantic elements:
+					</li>
+					<li>Using managed dependencies:
+						<ol>
+							<li>This project uses transitive managed dependencies.</li>
+							<li>This project's managed dependencies may also be imported by other projects.</li>
+						</ol>
 					</li>
 				</ul>
 			</changelog:release>
