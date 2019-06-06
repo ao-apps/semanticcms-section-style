@@ -125,10 +125,9 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId>
 		</dependency>
-		<!-- This provides the styles for toc.inc.jspx -->
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId>
-			<optional>true</optional>
+			<optional>true</optional><!-- This provides the styles for toc.inc.jspx -->
 		</dependency>
 	</dependencies>
 </project>
