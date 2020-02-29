@@ -1,6 +1,6 @@
 /*
  * semanticcms-section-style - Default style for sections nested within SemanticCMS pages and elements.
- * Copyright (C) 2013, 2014, 2016  AO Industries, Inc.
+ * Copyright (C) 2013, 2014, 2016, 2020  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -78,4 +78,11 @@ h2.semanticcms-section-toc-header {
 
 li.semanticcms-section-list-item {
 	list-style-image: url('section-16x16.png');
+}
+.semanticcms-section-h2-content,
+.semanticcms-section-h3-content,
+.semanticcms-section-h4-content,
+.semanticcms-section-h5-content,
+.semanticcms-section-h6-content {
+	margin-bottom: 1em;
 }
