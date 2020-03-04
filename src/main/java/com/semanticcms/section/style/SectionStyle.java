@@ -22,22 +22,29 @@
  */
 package com.semanticcms.section.style;
 
+import com.aoindustries.web.resources.registry.Style;
+import com.aoindustries.web.resources.servlet.RegistryEE;
 import com.semanticcms.core.renderer.html.HtmlRenderer;
 import com.semanticcms.section.model.SectioningContent;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the styles for sections in HtmlRenderer.")
-public class Initializer implements ServletContextListener {
+@WebListener("Registers the styles for sections in RegistryEE and HtmlRenderer.")
+public class SectionStyle implements ServletContextListener {
+
+	public static final Style SEMANTICCMS_SECTION = new Style("/semanticcms-section-style/semanticcms-section.css");
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(event.getServletContext());
+		ServletContext servletContext = event.getServletContext();
+
 		// Add our CSS file
-		htmlRenderer.addCssLink("/semanticcms-section-style/semanticcms-section.css");
+		RegistryEE.get(servletContext).global.styles.add(SEMANTICCMS_SECTION);
+
 		// Add list item CSS class
-		htmlRenderer.addListItemCssClass(SectioningContent.class, "semanticcms-section-list-item");
+		HtmlRenderer.getInstance(servletContext).addListItemCssClass(SectioningContent.class, "semanticcms-section-list-item");
 	}
 
 	@Override
