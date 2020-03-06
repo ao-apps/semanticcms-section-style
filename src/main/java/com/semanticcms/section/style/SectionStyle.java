@@ -22,6 +22,7 @@
  */
 package com.semanticcms.section.style;
 
+import com.aoindustries.web.resources.registry.Group;
 import com.aoindustries.web.resources.registry.Style;
 import com.aoindustries.web.resources.servlet.RegistryEE;
 import com.semanticcms.core.renderer.html.HtmlRenderer;
@@ -34,6 +35,9 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for sections in RegistryEE and HtmlRenderer.")
 public class SectionStyle implements ServletContextListener {
 
+	public static final Group.Name RESOURCE_GROUP = new Group.Name("semanticcms-section-style");
+
+	// TODO: Change to Group.Name once we have group-level ordering
 	public static final Style SEMANTICCMS_SECTION = new Style("/semanticcms-section-style/semanticcms-section.css");
 
 	@Override
@@ -41,7 +45,11 @@ public class SectionStyle implements ServletContextListener {
 		ServletContext servletContext = event.getServletContext();
 
 		// Add our CSS file
-		RegistryEE.get(servletContext).global.styles.add(SEMANTICCMS_SECTION);
+		RegistryEE.Application.get(servletContext)
+			.activate(RESOURCE_GROUP) // TODO: Activate as-needed
+			.getGroup(RESOURCE_GROUP)
+			.styles
+			.add(SEMANTICCMS_SECTION);
 
 		// Add list item CSS class
 		HtmlRenderer.getInstance(servletContext).addListItemCssClass(SectioningContent.class, "semanticcms-section-list-item");
