@@ -74,7 +74,6 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 								<link>https://aoindustries.com/ao-web-resources/servlet/apidocs/</link>
 								<link>https://semanticcms.com/core/servlet/apidocs/</link>
 								<link>https://semanticcms.com/section/model/apidocs/</link>
-								<link>https://semanticcms.com/section/servlet/apidocs/</link>
 							</links>
 						</configuration>
 					</plugin>
@@ -104,9 +103,6 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId><version>1.5.1${POST-SNAPSHOT}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId><version>1.8.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -128,10 +124,6 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId>
-			<optional>true</optional><!-- This provides the styles for toc.inc.jspx -->
 		</dependency>
 	</dependencies>
 </project>
