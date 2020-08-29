@@ -20,6 +20,9 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses/>.
  */
+section.semanticcms-section {
+	clear: both;
+}
 .semanticcms-section-toc {
 	clear: both;
 	float: left;
