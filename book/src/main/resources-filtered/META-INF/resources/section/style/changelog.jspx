@@ -37,7 +37,7 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-31T02:24:12-0500"
-		dateModified="2020-09-02T17:22:03-05:00"
+		dateModified="2020-11-27T22:09:43-06:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-section-style:pom.version}" />
@@ -52,22 +52,31 @@ along with semanticcms-section-style.  If not, see <http://www.gnu.org/licenses 
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
-			>
-				<ul>
-					<li>
-						<p>
-							Added <code>clear:both</code> to section elements via a new CSS class
-							<code>semanticcms-section</code>.  This make anchors to the section id navigate to the section
-							itself, and not any floated content before it.
-						</p>
-						<p>
-							The <code>semanticcms-section</code> class is also added to aside and nav, but no default
-							style is applied.
-						</p>
-					</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.7.0"
+			datePublished="2020-11-27T22:09:43-06:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>
+					<p>
+						Added <code>clear:both</code> to section elements via a new CSS class
+						<code>semanticcms-section</code>.  This make anchors to the section id navigate to the section
+						itself, and not any floated content before it.
+					</p>
+					<p>
+						The <code>semanticcms-section</code> class is also added to aside and nav, but no default
+						style is applied.
+					</p>
+				</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
