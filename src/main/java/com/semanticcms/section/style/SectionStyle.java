@@ -1,6 +1,6 @@
 /*
  * semanticcms-section-style - Default style for sections nested within SemanticCMS pages and elements.
- * Copyright (C) 2016, 2017, 2019, 2020, 2021  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -20,6 +20,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with semanticcms-section-style.  If not, see <https://www.gnu.org/licenses/>.
  */
+
 package com.semanticcms.section.style;
 
 import com.aoapps.web.resources.registry.Group;
