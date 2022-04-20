@@ -1,6 +1,6 @@
 /*
  * semanticcms-section-style - Default style for sections nested within SemanticCMS pages and elements.
- * Copyright (C) 2013, 2014, 2016, 2020  AO Industries, Inc.
+ * Copyright (C) 2013, 2014, 2016, 2020, 2022  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -21,71 +21,71 @@
  * along with semanticcms-section-style.  If not, see <https://www.gnu.org/licenses/>.
  */
 section.semanticcms-section {
-	clear: both;
+  clear: both;
 }
 .semanticcms-section-toc {
-	clear: both;
-	float: left;
-	border: 1px solid #c0c0c0;
-	background-color: #f0f4ff;
-	padding: 6px;
-	margin-bottom: 1em;
-	font-size: smaller;
+  clear: both;
+  float: left;
+  border: 1px solid #c0c0c0;
+  background-color: #f0f4ff;
+  padding: 6px;
+  margin-bottom: 1em;
+  font-size: smaller;
 }
 h2.semanticcms-section-toc-header {
-	font-size: inherit; /* CSS3 - don't care about old IE */
-	border: none;
-	margin: 0px;
-	font-weight:bold;
-	text-align:center;
+  font-size: inherit; /* CSS3 - don't care about old IE */
+  border: none;
+  margin: 0px;
+  font-weight:bold;
+  text-align:center;
 }
 .semanticcms-section-toc1ol,
 .semanticcms-section-toc2ol,
 .semanticcms-section-toc3ol,
 .semanticcms-section-toc4ol,
 .semanticcms-section-toc5ol {
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 .semanticcms-section-toc1li a,
 .semanticcms-section-toc2li a,
 .semanticcms-section-toc3li a,
 .semanticcms-section-toc4li a,
 .semanticcms-section-toc5li a {
-	text-decoration: none;
+  text-decoration: none;
 }
 .semanticcms-section-toc1li a:hover,
 .semanticcms-section-toc2li a:hover,
 .semanticcms-section-toc3li a:hover,
 .semanticcms-section-toc4li a:hover,
 .semanticcms-section-toc5li a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 .semanticcms-section-toc1li {
-	margin-left: 0em;
+  margin-left: 0em;
 }
 .semanticcms-section-toc2li,
 .semanticcms-section-toc3li,
 .semanticcms-section-toc4li,
 .semanticcms-section-toc5li {
-	margin-left: 2em;
+  margin-left: 2em;
 }
 .semanticcms-section-toc1li,
 .semanticcms-section-toc2li,
 .semanticcms-section-toc3li,
 .semanticcms-section-toc4li,
 .semanticcms-section-toc5li {
-	margin-top: 2px;
+  margin-top: 2px;
 }
 
 li.semanticcms-section-list-item {
-	list-style-image: url('section-16x16.png');
+  list-style-image: url('section-16x16.png');
 }
 .semanticcms-section-h2-content,
 .semanticcms-section-h3-content,
 .semanticcms-section-h4-content,
 .semanticcms-section-h5-content,
 .semanticcms-section-h6-content {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
