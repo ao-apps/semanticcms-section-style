@@ -36,28 +36,28 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for sections in RegistryEE and SemanticCMS.")
 public class SectionStyle implements ServletContextListener {
 
-	public static final Group.Name RESOURCE_GROUP = new Group.Name("semanticcms-section-style");
+  public static final Group.Name RESOURCE_GROUP = new Group.Name("semanticcms-section-style");
 
-	// TODO: Change to Group.Name once we have group-level ordering
-	public static final Style SEMANTICCMS_SECTION = new Style("/semanticcms-section-style/semanticcms-section.css");
+  // TODO: Change to Group.Name once we have group-level ordering
+  public static final Style SEMANTICCMS_SECTION = new Style("/semanticcms-section-style/semanticcms-section.css");
 
-	@Override
-	public void contextInitialized(ServletContextEvent event) {
-		ServletContext servletContext = event.getServletContext();
+  @Override
+  public void contextInitialized(ServletContextEvent event) {
+    ServletContext servletContext = event.getServletContext();
 
-		// Add our CSS file
-		RegistryEE.Application.get(servletContext)
-			.activate(RESOURCE_GROUP) // TODO: Activate as-needed
-			.getGroup(RESOURCE_GROUP)
-			.styles
-			.add(SEMANTICCMS_SECTION);
+    // Add our CSS file
+    RegistryEE.Application.get(servletContext)
+      .activate(RESOURCE_GROUP) // TODO: Activate as-needed
+      .getGroup(RESOURCE_GROUP)
+      .styles
+      .add(SEMANTICCMS_SECTION);
 
-		// Add list item CSS class
-		SemanticCMS.getInstance(servletContext).addListItemCssClass(SectioningContent.class, "semanticcms-section-list-item");
-	}
+    // Add list item CSS class
+    SemanticCMS.getInstance(servletContext).addListItemCssClass(SectioningContent.class, "semanticcms-section-list-item");
+  }
 
-	@Override
-	public void contextDestroyed(ServletContextEvent event) {
-		// Do nothing
-	}
+  @Override
+  public void contextDestroyed(ServletContextEvent event) {
+    // Do nothing
+  }
 }
