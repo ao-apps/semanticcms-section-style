@@ -47,10 +47,10 @@ public class SectionStyle implements ServletContextListener {
 
     // Add our CSS file
     RegistryEE.Application.get(servletContext)
-      .activate(RESOURCE_GROUP) // TODO: Activate as-needed
-      .getGroup(RESOURCE_GROUP)
-      .styles
-      .add(SEMANTICCMS_SECTION);
+        .activate(RESOURCE_GROUP) // TODO: Activate as-needed
+        .getGroup(RESOURCE_GROUP)
+        .styles
+        .add(SEMANTICCMS_SECTION);
 
     // Add list item CSS class
     HtmlRenderer.getInstance(servletContext).addListItemCssClass(SectioningContent.class, "semanticcms-section-list-item");
