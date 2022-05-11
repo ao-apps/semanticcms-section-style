@@ -33,6 +33,9 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ * Registers the styles for sections in {@link RegistryEE} and {@link SemanticCMS}.
+ */
 @WebListener("Registers the styles for sections in RegistryEE and SemanticCMS.")
 public class SectionStyle implements ServletContextListener {
 
@@ -49,8 +52,8 @@ public class SectionStyle implements ServletContextListener {
     RegistryEE.Application.get(servletContext)
         .activate(RESOURCE_GROUP)// TODO: Activate as-needed
         .getGroup(RESOURCE_GROUP)
-        .styles
-        .add(SEMANTICCMS_SECTION);
+            .styles
+            .add(SEMANTICCMS_SECTION);
 
     // Add list item CSS class
     SemanticCMS.getInstance(servletContext).addListItemCssClass(SectioningContent.class, "semanticcms-section-list-item");
