@@ -30,4 +30,4 @@ module com.semanticcms.section.style {
   requires com.semanticcms.section.model; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-model</artifactId>
   // Transitive
   requires com.semanticcms.core.renderer; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId>
-} // TODO: Avoiding rewrite-maven-plugin-4.22.2 truncation
+}
