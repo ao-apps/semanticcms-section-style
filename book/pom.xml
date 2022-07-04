@@ -36,15 +36,15 @@ along with semanticcms-section-style.  If not, see <https://www.gnu.org/licenses
     <module.name>com.semanticcms.section.style.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>semanticcms-section-style</documented.artifactId>
-    <documented.name>SemanticCMS Section Style²</documented.name>
+    <documented.name>SemanticCMS Section Style</documented.name>
     <documented.description>Default style for sections nested within SemanticCMS pages and elements.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>SemanticCMS Section Style² Book</name>
+  <name>SemanticCMS Section Style Book</name>
   <url>https://semanticcms.com/section/style/</url>
-  <description>Documentation for SemanticCMS Section Style² in SemanticCMS format.</description>
+  <description>Documentation for SemanticCMS Section Style in SemanticCMS format.</description>
   <inceptionYear>2013</inceptionYear>
 
   <licenses>
