@@ -23,7 +23,7 @@ Default style for sections nested within [SemanticCMS](https://github.com/ao-app
 * [Project Home](https://semanticcms.com/section/style/)
 * [Changelog](https://semanticcms.com/section/style/changelog)
 * [API Docs](https://semanticcms.com/section/style/apidocs/)
-* [Maven Central Repository](https://search.maven.org/artifact/com.semanticcms/semanticcms-section-style)
+* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.semanticcms&q=a%3Asemanticcms-section-style)
 * [GitHub](https://github.com/ao-apps/semanticcms-section-style)
 
 ## Contact Us
