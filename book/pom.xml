@@ -41,6 +41,9 @@ along with semanticcms-section-style.  If not, see <https://www.gnu.org/licenses
     <documented.artifactId>semanticcms-section-style</documented.artifactId>
     <documented.name>SemanticCMS Section Style</documented.name>
     <documented.description>Default style for sections nested within SemanticCMS pages and elements.</documented.description>
+    <javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a>
+/ <a target="${javadoc.target}" href="https://semanticcms.com/section/">Section</a>
+/ <a target="${javadoc.target}" href="${project.url}">Style</a>]]></javadoc.breadcrumbs>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
